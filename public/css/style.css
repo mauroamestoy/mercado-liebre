@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h2 { font-size: 2.4rem; margin: 0; }
+h3 { font-size: 1.8rem; margin: 0;}
+h4 { font-size: 1.6rem; margin: 0;}
+p, a { font-size: 1.2rem; margin: 0;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+    padding: 20px;
+}
+
+.search-nav {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.banner-cuotas {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.banner-cuotas p {
+    display: inline;
+}
+
+.contenedor-nav a {
+    color: #000;
+    text-decoration: none;
+}
+.contenedor-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.login-bar { margin-top: 1.5rem;}
+
+.burger-nav {
+    background-color: #03264C;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .burger-nav div {
+    background-color: #ffffff;
+    width: 40px;
+    padding: 5px;
+    margin: auto;
+} */
+
+.pan-arriba, .relleno, .pan-abajo {
+    height: 3px;
+    background-color: #ffffff;
+    width: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+main {
+    background-color: #ebebeb;
+    padding: 2rem;
+}
+
+.ultimaVisita, 
+.ofertas {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.ofertas {
+    margin-top: 2rem;
+}
+
+.ultimaVisita img, 
+.ofertas img {
+    width: 200px;
+}
+
+.contenedor-footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contenedor-footer i {
+    font-size: 4rem;
+    color:  #03264C;
+    margin-bottom: 1.5rem;
+}
+
+.seccion-footer1,
+.seccion-footer2,
+.seccion-footer3 {
+    margin: 5rem;
+}
