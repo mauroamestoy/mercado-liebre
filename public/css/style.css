@@ -31,7 +31,16 @@ header {
     align-items: center;
     padding: 2rem;
     text-align: center;
+    max-width: 1150px;
+    margin: auto;
 }
+
+.search-nav {
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+}
+
 /*LOGO*/
 .logo {
     width: 150px;
@@ -49,11 +58,13 @@ header {
 /*NAV BAR*/
 .contenedor-navbar {
     display: none;
+    max-width: 1150px;
+    margin: auto;
 }
 
 /*BURGER NAV*/
 .burger-nav {
-    background-color: #03264C;
+    background-color:#1259c3;
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -81,15 +92,21 @@ header {
 /*START-------MAIN---------*/
 main {
     background-color: #ebebeb;
-    padding: 2rem 0;
+    padding: 0 0 5rem;
+}
+
+/* ---HOME--- */
+
+.banner-portada img {
+    width: 100%;
 }
 
 /*START-------ARTICULOS---------*/
 
 .contenedor-articulos {
     width: 90vw;
-    margin: 1rem auto;
     background-color: #fff;
+    margin: 0 auto 1rem;
 }
 
 .ofertas {
@@ -98,15 +115,21 @@ main {
 
 .ultimaVisita img, 
 .ofertas img {
-    width: 30rem;
+    width: 24rem;
     max-width: 90vw;
     margin: auto;
     display: block;
 }
 
+.ultimaVisita h2, 
+.ofertas h2 {
+    padding: 2rem;
+}
+
 .contenedor-descripcion {
     border-top: solid #ebebeb 1px;
     padding: 1.5rem;
+    position: relative;
 }
 
 .contenedor-descripcion .descripcion {
@@ -117,15 +140,114 @@ main {
     color: #39b54a;
 }
 
+.precio-descuento {
+    display: flex;
+    align-items: flex-end;
+}
+
+.precio {
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+}
+
 .fa-truck {
     font-size: 1.8rem;
     color: #39b54a;
     border: solid #39b54a 1px;
     border-radius: 50%;
-    padding: 0.5rem 2rem 2rem 0.5rem;
+    padding: .5rem;
+    position: absolute;
+    right: 2rem;
+    top: -1.5rem;
+    transition: transform 450ms;
 }
 
 /*END--------ARTICULOS--------*/
+/* END---HOME--- */
+
+/* ---REGISTER--- */
+
+.sign-in {
+    max-width: 60rem;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.formulario {
+    width: 90%;
+    margin: auto;
+}
+
+.sign-in h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.control-formulario {
+    margin-bottom: 2rem;
+}
+
+.control-formulario label {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.control {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.radio-btn {
+    margin: 0 1rem;
+}
+
+.perfil-usuario-btn {
+    display: flex;
+}
+
+.perfil-usuario-btn label {
+    margin: 0 1rem;
+}
+
+.control-formulario .boton-enviar{
+    font-size: 1.4rem;
+    background-color: #1259c3;
+    border: 2px solid#1259c3;
+    border-radius: 5px;
+    padding: 0.55rem 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.control-formulario .boton-enviar.login {
+    width: 100%;
+    transition: all 450ms;
+}
+
+.control-formulario .boton-enviar.login:hover {
+    background-color: #0022AA;
+    border-color: #0022AA;
+}
+
+.control-formulario .boton-reset{
+    font-size: 1.4rem;
+    border: 2px solid #1259c3;
+    border-radius: 5px;
+    padding: 0.55rem 1.5rem;
+    color: #1259c3;
+}
+/* END---REGISTER--- */
+
 /*END--------MAIN---------*/
 
 /*START---------FOOTER--------*/
@@ -137,7 +259,7 @@ main {
 
 .contenedor-footer i {
     font-size: 4rem;
-    color:  #03264C;
+    color:  #1259c3;
     margin-bottom: 1.5rem;
 }
 
@@ -173,15 +295,97 @@ main {
         display: none;
     }
 
+    .logo{
+        width: 20%;
+    }
+
     .banner-cuotas {
         margin: 0;
         max-width: 25rem;
         text-align: right;
+        width: 30%;
     }
+
+    .conteiner-search-nav{
+        width: 50%;
+        max-width: 150rem;
+    }
+
+    .search-nav{
+        width: 80%;
+        max-width: 150rem;
+    }
+
+    .ultimaVisita, .ofertas {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .ultimaVisita .contenedor, 
+    .ofertas .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+
+    .contenedor-articulos {
+        width: calc(50% - 1rem);
+        margin: 0 0 1rem;
+    }
+
+    .seccion-footer1,
+    .seccion-footer2,
+    .seccion-footer3 {
+        max-width: 40rem;
+        margin: 5rem auto;
+}
 }
 
 @media (min-width: 1024px){
-    .contenedor-articulos{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .ultimaVisita,
+    .ofertas {
+        max-width: 1150px;
+        margin: auto;
+    }
+
+    .ultimaVisita .contenedor, 
+    .ofertas .contenedor{
+        padding: 0 2rem;
+    }
+
+    .contenedor-articulos {
+        width: calc(25% - 1rem);
+        margin: 0;
+        position: relative;
+        transition: all 450ms;
+    }
+    .descripcion {
+        display: none;
+        transition: all 2000ms;
+    }
+
+    .contenedor-articulos:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .contenedor-articulos:hover .descripcion {
+        display: block;
+    }
+
+    .contenedor-articulos:hover .fa-truck {
+        transform: rotate(-90deg);
+    }
+
+    .contenedor-footer {
+        display: flex;
+    }
+
+    .seccion-footer1:hover i,
+    .seccion-footer2:hover i,
+    .seccion-footer3:hover i {
+        color:#EAC926;
     }
 }
