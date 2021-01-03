@@ -351,6 +351,11 @@ main {
         margin: auto;
     }
 
+    .ofertas {
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
     .ultimaVisita .contenedor, 
     .ofertas .contenedor{
         padding: 0 2rem;
@@ -359,20 +364,24 @@ main {
     .contenedor-articulos {
         width: calc(25% - 1rem);
         margin: 0;
-        position: relative;
-        transition: all 450ms;
+        transition: box-shadow 450ms;
     }
-    .descripcion {
-        display: none;
-        transition: all 2000ms;
+    .contenedor-descripcion .descripcion {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
     }
 
     .contenedor-articulos:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: -10rem;
     }
 
     .contenedor-articulos:hover .descripcion {
-        display: block;
+        opacity: 1;
+        height: auto;
+        margin-top: 2.5rem;
     }
 
     .contenedor-articulos:hover .fa-truck {
